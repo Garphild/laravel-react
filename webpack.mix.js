@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const postCssCustomProperties = require('postcss-custom-properties');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,16 +13,16 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('resources/js/app.jsx', 'public/js')
-    // .js('resources/js/auth.jsx', 'public/js')
-    .react()
-    .extract(['react', 'react-dom', 'axios']).sass('resources/sass/app.scss', 'public/css')
-    .options({
-        autoprefixer: {options: {browsers: ['last 6 versions',]}},
-        postCss: [require('postcss-custom-properties')]
-    });
+  .js('resources/js/app.jsx', 'public/js')
+// .js('resources/js/auth.jsx', 'public/js')
+  .react()
+  .extract(['react', 'react-dom', 'axios']).sass('resources/sass/app.scss', 'public/css')
+  .options({
+    autoprefixer: { options: { browsers: ['last 6 versions'] } },
+    postCss: [postCssCustomProperties],
+  });
 if (mix.inProduction()) {
-    mix.version();
+  mix.version();
 } else {
-    mix.browserSync('127.0.0.1:8000');
+  mix.browserSync('127.0.0.1:8000');
 }

@@ -1,5 +1,6 @@
 import './bootstrap';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Application from './Application/Application';
 
-ReactDOM.render(<div id="container">Test</div>, document.getElementById('root'));
+ReactDOM.render(<Application />, document.getElementById('root'));
