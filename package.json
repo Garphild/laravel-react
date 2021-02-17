@@ -1,0 +1,58 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.12.13",
+        "@babel/preset-react": "^7.12.13",
+        "axios": "^0.21.1",
+        "babel-eslint": "^10.1.0",
+        "browser-sync": "^2.26.14",
+        "browser-sync-webpack-plugin": "2.2.2",
+        "eslint": "^7.20.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "postcss-custom-properties": "^11.0.0",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.7",
+        "sass-loader": "8.*"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.2",
+        "@material-ui/core": "^4.11.3",
+        "@material-ui/icons": "^4.11.2",
+        "bootstrap": "^4.6.0",
+        "mobx": "^6.1.7",
+        "mobx-react": "^7.1.0",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "reactstrap": "^8.9.0",
+        "validate.js": "^0.13.1"
+    },
+    "babel": {
+        "plugins": [
+            [
+                "@babel/plugin-proposal-class-properties",
+                {
+                    "loose": true
+                }
+            ]
+        ]
+    }
+}
