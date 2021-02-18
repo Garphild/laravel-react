@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { observer } from 'mobx-react';
 
-class Application extends Component {
+class Application extends PureComponent {
   render() {
     return (
       <div>
-        Application
+        Application test
       </div>
     );
   }
@@ -13,4 +14,4 @@ class Application extends Component {
 
 Application.propTypes = {};
 
-export default Application;
+export default observer(Application);
