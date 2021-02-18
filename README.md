@@ -23,6 +23,7 @@ UI:
   * autoprefixer
   * postcss
     * postcss-custom-properties
+* react-toastify
 
 Utilities:
 
